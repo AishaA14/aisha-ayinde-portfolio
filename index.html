@@ -6,10 +6,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXAzlHA+4m9RvHyyhC+AL5gYF",
           crossorigin="anonymous">
+    <script src="index.js" defer></script>     
     <title>Aisha's Portfolio</title>
 </head>
 <body>
-<section>
+<section id="navbar">
 <nav class="bg-gray-800 p-4 text-white">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <div class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -52,7 +53,7 @@
 
 <!-- Introduction Section -->
 <div>
-    <section class="intro">
+    <section id="intro">
         <h1>Hi, I'm Aisha</h1>
         <h2>I'm a Software Developer based in London</h2>
     </section>
@@ -175,140 +176,141 @@
 
 <!-- Projects Section -->
 <section id="projects">
-    <div class="container mx-auto">
-    <h1><i class="fas fa-laptop-code"></i> Projects</h1>
-    </div>
-    </section>
-
-<!-- Snake Game -->
-<section class="flex items-center justify-between">
-    <div class="w-1/2">
-      <h2>Snake Game</h2>
-      <h3>Solo Project | 1 Week</h3>
-      <p>This was the first project I completed. My aim was to recreate the classical game snake with a more modern twist.</p>
-      <!-- Buttons section -->
-      <div class="flex items-center justify-around mt-4">
-         <!-- Open GitHub Button -->
-         <a href="https://github.com/your-github-username/your-gum-gum-repository" target="_blank" rel="noopener noreferrer" class="text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-         <i class="fab fa-github"></i> Open GitHub
-         </a>
-     
-         <!-- Open Project Button -->
-         <a href="link-to-your-project" target="_blank" rel="noopener noreferrer" class="text-center bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-         <i class="fas fa-play"></i> Open Project
-         </a>
-     </div>
-    </div>
-    <div>
-        <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
-            <!-- The One Piece Orchard content -->
-            <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
-                <img src="assets/images/snake.png" class="dark:hidden h-[156px] md:h-[278px] w-full rounded-xl" alt="">
-                <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen-dark.png" class="hidden dark:block h-[156px] md:h-[278px] w-full rounded-lg" alt="">
-            </div>
+        <div class="container mx-auto">
+        <h1><i class="fas fa-laptop-code"></i> Projects</h1>
         </div>
-        <div class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
-            <div class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"></div>
-        </div>
-    </div>
-  </section>
+    
 
-    <!-- The One Piece Orchard -->
-    <section class="flex items-center justify-between">
+     <!-- Snake Game -->
+     <div class="flex items-center justify-between">
         <div class="w-1/2">
-        <h2>The One Piece Orchard</h2>
+        <h2>Snake Game</h2>
         <h3>Solo Project | 1 Week</h3>
-        <p>Owing to my dedication and love for the long-running anime One Piece, my second project, the One Piece Orchard, acts as an online library for One Piece enthusiasts like myself to keep track of all the 'Devil Fruits' that have appeared throughout the series, keep track of the users of that fruit, and learn more about it.</p>
+        <p>This was the first project I completed. My aim was to recreate the classical game snake with a more modern twist.</p>
         <!-- Buttons section -->
         <div class="flex items-center justify-around mt-4">
             <!-- Open GitHub Button -->
-            <a href="https://github.com/your-github-username/your-gum-gum-repository" target="_blank" rel="noopener noreferrer" class="text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <a href="https://github.com/AishaA14/snake_project#readme" target="_blank" rel="noopener noreferrer" class="text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             <i class="fab fa-github"></i> Open GitHub
             </a>
         
             <!-- Open Project Button -->
-            <a href="link-to-your-project" target="_blank" rel="noopener noreferrer" class="text-center bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+            <a href="https://aishaa14.github.io/snake_project/snake.html" target="_blank" rel="noopener noreferrer" class="text-center bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
             <i class="fas fa-play"></i> Open Project
             </a>
         </div>
-    </div>
-    <div>
-        <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
-            <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
-                <img src="assets/images/opo.png" class="dark:hidden h-[156px] md:h-[278px] w-full rounded-xl" alt="">
-                <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen-dark.png" class="hidden dark:block h-[156px] md:h-[278px] w-full rounded-lg" alt="">
+        </div>
+        <div>
+            <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                <!-- The One Piece Orchard content -->
+                <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                    <img src="assets/images/snake.png" class="dark:hidden h-[156px] md:h-[278px] w-full rounded-xl" alt="">
+                    <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen-dark.png" class="hidden dark:block h-[156px] md:h-[278px] w-full rounded-lg" alt="">
+                </div>
+            </div>
+            <div class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                <div class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"></div>
             </div>
         </div>
-        <div class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
-            <div class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"></div>
-        </div>
     </div>
-    </section>
 
-    <!-- Fitnomenal -->
-    <section class="flex items-center justify-between">
-        <div class="w-1/2">
-            <h2>Fitnomenal</h2>
-            <h3>Group Project | 1 Week</h3>
-            <p>Following my love of fitness, I created Fitnomenal alongside two team members. The app is built for people interested in getting fit but don't know where to start, using a workout generator API to randomly generate a daily workout for the user. The app also tracks the user's progress in relation to the goals they set for themselves to keep them motivated. Check out the app (insert deployment link). Wanna see the code? (insert Readme link)</p>
+        <!-- The One Piece Orchard -->
+        <div class="flex items-center justify-between">
+            <div class="w-1/2">
+            <h2>The One Piece Orchard</h2>
+            <h3>Solo Project | 1 Week</h3>
+            <p>Owing to my dedication and love for the long-running anime One Piece, my second project, the One Piece Orchard, acts as an online library for One Piece enthusiasts like myself to keep track of all the 'Devil Fruits' that have appeared throughout the series, keep track of the users of that fruit, and learn more about it.</p>
             <!-- Buttons section -->
             <div class="flex items-center justify-around mt-4">
                 <!-- Open GitHub Button -->
-                <a href="https://github.com/your-github-username/your-gum-gum-repository" target="_blank" rel="noopener noreferrer" class="text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                <a href="https://github.com/AishaA14/the-one-piece-orchard-frontend#readme" target="_blank" rel="noopener noreferrer" class="text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                 <i class="fab fa-github"></i> Open GitHub
                 </a>
             
                 <!-- Open Project Button -->
-                <a href="link-to-your-project" target="_blank" rel="noopener noreferrer" class="text-center bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                <a href="https://the-one-piece-orchard.netlify.app/fruits" target="_blank" rel="noopener noreferrer" class="text-center bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
                 <i class="fas fa-play"></i> Open Project
                 </a>
             </div>
-        </div>
-        <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
-            <!-- Fitnomenal content -->
-            <div class="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
-            <div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
-            <div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
-            <div class="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
-            <div class="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
-                <img src="assets/images/fn.png" class="dark:hidden w-[272px] h-[572px]" alt="">
-                <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-dark.png" class="hidden dark:block w-[272px] h-[572px]" alt="">
+         </div>
+         <div>
+            <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                    <img src="assets/images/opo.png" class="dark:hidden h-[156px] md:h-[278px] w-full rounded-xl" alt="">
+                    <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen-dark.png" class="hidden dark:block h-[156px] md:h-[278px] w-full rounded-lg" alt="">
+                </div>
+            </div>
+            <div class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                <div class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"></div>
+            </div>
             </div>
         </div>
-    </section>
 
-    <!-- Gum Gum -->
-    <section class="flex items-center justify-between">
-        <div class="w-1/2">
-            <h2>Gum Gum</h2>
-            <h3>Solo Project | 1 Week</h3>
-            <p>Gum Gum was inspired by the self-improvement ideology of James Clear's Atomic Habit. It allows the user to set goals and create micro-habits to achieve them. It also visualizes the completion of the daily habit so the user can see their progress.
+        <!-- Fitnomenal -->
+        <div class="flex items-center justify-between">
+            <div class="w-1/2">
+                <h2>Fitnomenal</h2>
+                <h3>Group Project | 1 Week</h3>
+                <p>Following my love of fitness, I created Fitnomenal alongside two team members. The app is built for people interested in getting fit but don't know where to start, using a workout generator API to randomly generate a daily workout for the user. The app also tracks the user's progress in relation to the goals they set for themselves to keep them motivated. Check out the app (insert deployment link). Wanna see the code? (insert Readme link)</p>
                 <!-- Buttons section -->
-            <div class="flex items-center justify-around mt-4">
-                <!-- Open GitHub Button -->
-                <a href="https://github.com/your-github-username/your-gum-gum-repository" target="_blank" rel="noopener noreferrer" class="text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                  <i class="fab fa-github"></i> Open GitHub
-                </a>
-              
-                <!-- Open Project Button -->
-                <a href="link-to-your-project" target="_blank" rel="noopener noreferrer" class="text-center bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                  <i class="fas fa-play"></i> Open Project
-                </a>
-              </div>
+                <div class="flex items-center justify-around mt-4">
+                    <!-- Open GitHub Button -->
+                    <a href="https://github.com/AishaA14/fitnomenal" target="_blank" rel="noopener noreferrer" class="text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <i class="fab fa-github"></i> Open GitHub
+                    </a>
+                
+                    <!-- Open Project Button -->
+                    <a href="https://fitnomenal-workouts.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-center bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                    <i class="fas fa-play"></i> Open Project
+                    </a>
+                </div>
             </div>
-        <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
-            <!-- Gum Gum content -->
-            <div class="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
-            <div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
-            <div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
-            <div class="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
-            <div class="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
-                <img src="assets/images/gghabit.png" class="dark:hidden w-[272px] h-[572px]" alt="">
-                <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-dark.png" class="hidden dark:block w-[272px] h-[572px]" alt="">
+            <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
+                <!-- Fitnomenal content -->
+                <div class="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
+                <div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
+                <div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
+                <div class="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
+                <div class="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
+                    <img src="assets/images/fn.png" class="dark:hidden w-[272px] h-[572px]" alt="">
+                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-dark.png" class="hidden dark:block w-[272px] h-[572px]" alt="">
+                </div>
             </div>
         </div>
-    </section>
+
+        <!-- Gum Gum -->
+        <div class="flex items-center justify-between">
+            <div class="w-1/2">
+                <h2>Gum Gum</h2>
+                <h3>Solo Project | 1 Week</h3>
+                <p>Gum Gum was inspired by the self-improvement ideology of James Clear's Atomic Habit. It allows the user to set goals and create micro-habits to achieve them. It also visualizes the completion of the daily habit so the user can see their progress.
+                    <!-- Buttons section -->
+                <div class="flex items-center justify-around mt-4">
+                    <!-- Open GitHub Button -->
+                    <a href="https://github.com/AishaA14/Project4-frontend" target="_blank" rel="noopener noreferrer" class="text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <i class="fab fa-github"></i> Open GitHub
+                    </a>
+                
+                    <!-- Open Project Button -->
+                    <a href="https://project4-frontend-production-dadf.up.railway.app" target="_blank" rel="noopener noreferrer" class="text-center bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                    <i class="fas fa-play"></i> Open Project
+                    </a>
+                </div>
+                </div>
+            <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
+                <!-- Gum Gum content -->
+                <div class="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
+                <div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
+                <div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
+                <div class="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
+                <div class="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
+                    <img src="assets/images/gghabit.png" class="dark:hidden w-[272px] h-[572px]" alt="">
+                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-dark.png" class="hidden dark:block w-[272px] h-[572px]" alt="">
+                </div>
+            </div>
+        </div>
 </section>
+
 
 <section id="experience">
 <h2>Previous Experience</h2>
