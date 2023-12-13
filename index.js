@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    showSection("intro"); // Show an initial section, e.g., "intro"
+    showSection("about"); // Show an initial section
 
     function showSection(sectionId) {
         document.querySelectorAll('section').forEach(function(section) {
