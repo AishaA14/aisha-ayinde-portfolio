@@ -26,6 +26,13 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
+    const mobileMenuButton = document.querySelector('#mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+  
+    mobileMenuButton.addEventListener('click', function () {
+        mobileMenu.classList.toggle('hidden');
+    });
+
 
     const backToTopButton = document.getElementById("back-to-top");
     // Show or hide the button based on the scroll position
@@ -36,10 +43,6 @@ document.addEventListener("DOMContentLoaded", function() {
             backToTopButton.style.display = "none";
         }
     });
-    // Add click event to the "Back to Top" button
-    // document.getElementById('back-to-top').addEventListener('click', function() {
-    //     scrollTo(0); // Scroll to the top of the page
-    // });
     // Scroll to the top when the button is clicked
     backToTopButton.addEventListener("click", function () {
         document.body.scrollTop = 0; // For Safari

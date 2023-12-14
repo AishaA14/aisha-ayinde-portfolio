@@ -3,9 +3,6 @@ body {
     cursor: none; /* Hide the default cursor */
 }
 
-
-
-
 .custom-cursor {
     position: fixed;
     width: 30px; /* Adjust the width of your custom cursor */
@@ -16,7 +13,26 @@ body {
     z-index: 9999; /* Set a high z-index to make sure it's above other elements */
 }
 
+a, button {
+    cursor: none;
+}
+/* Add mobile-specific styles */
+@media (max-width: 767px) {
+    #navbar-sticky {
+      display: none; /* Hide desktop menu on mobile */
+    }
+  
+    #mobile-menu {
+      display: block; /* Show mobile menu */
+    }
+  }
 
+/* Add styles for the mobile menu icon */
+#mobile-menu-toggle {
+    margin-right: 0.5rem;
+  }
+  
+  
 .intro {
     height: 100%;
     width: 100%;
@@ -100,6 +116,105 @@ h3 {
     transform: scale(1.1); /* Increase the size on hover */
 }
 
+@keyframes fadeInFromSide {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+#experience {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline {
+    position: relative;
+}
+
+.ga-event {
+    border-left: 2px solid #3498db;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    animation: fadeInFromSide 0.8s ease-out;
+}
+.ba-event {
+    border-left: 2px solid #3498db;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    animation: fadeInFromSide 2s ease-out;
+}
+
+.ga-event::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -6px;
+    margin-top: -6px;
+    width: 12px;
+    height: 12px;
+    background-color: #3498db;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.ba-event::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -6px;
+    margin-top: -6px;
+    width: 12px;
+    height: 12px;
+    background-color: #3498db;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.ga-content {
+    margin-left: 20px;
+}
+.ba-content {
+    margin-left: 20px;
+}
+
+h2, h3, p {
+    margin: 0;
+}
+
+h2 {
+    animation: slideInFromTop 1s ease-out;
+}
+
+h3 {
+    animation: slideInFromTop 1s ease-out;
+    animation-delay: 0.2s; /* Add delay for subheaders */
+}
+
+p {
+    animation: fadeInFromSide 1.5s ease-out;
+    animation-delay: 0.4s; /* Add delay for paragraphs */
+}
+
+
+
 #back-to-top {
     display: none;
     position: fixed;
@@ -114,9 +229,4 @@ h3 {
 
 #back-to-top:hover {
     background-color: #0056b3;
-}
-
-
-a, button {
-    cursor: none;
 }
