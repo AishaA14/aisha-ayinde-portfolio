@@ -1,6 +1,22 @@
 body {
     font-family: 'Comfortaa', sans-serif;
+    cursor: none; /* Hide the default cursor */
 }
+
+
+
+
+.custom-cursor {
+    position: fixed;
+    width: 30px; /* Adjust the width of your custom cursor */
+    height: 30px; /* Adjust the height of your custom cursor */
+    background: url('assets/images/paw.svg') no-repeat;
+    background-size: cover;
+    pointer-events: none; /* Ensure the cursor doesn't interfere with other elements */
+    z-index: 9999; /* Set a high z-index to make sure it's above other elements */
+}
+
+
 .intro {
     height: 100%;
     width: 100%;
@@ -52,6 +68,7 @@ h3 {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
     text-align: center;
+    justify-content: space-around;
 }
 
 .skills-container h2 {
@@ -83,3 +100,23 @@ h3 {
     transform: scale(1.1); /* Increase the size on hover */
 }
 
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#back-to-top:hover {
+    background-color: #0056b3;
+}
+
+
+a, button {
+    cursor: none;
+}

@@ -1,411 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Raleway:wght@100;400&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXAzlHA+4m9RvHyyhC+AL5gYF",
-          crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <script src="index.js" defer></script>     
-    <title>Aisha's Portfolio</title>
-</head>
-<body>
-<section id="navbar" class="mb-10">
-<nav class="bg-pink-800 p-4 text-white">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <div class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="assets/images/main-picture.svg" class="h-10" alt="image">
-            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Aisha's Portfolio</span>
-        </div>
-        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                <li>
-                    <a href="#about" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">
-                        <i class="fas fa-info-circle"></i> About
-                    </a>
-                </li>
-                <li>
-                    <a href="#experience" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                        <i class="fas fa-laptop-code"></i> Experience
-                    </a>
-                </li>
-                <li>
-                    <a href="#projects" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                        <i class="fas fa-laptop-code"></i> Projects
-                    </a>
-                </li>
-                <li>
-                    <a href="#experience" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                        <i class="fas fa-laptop-code"></i> Experience
-                    </a>
-                </li>
-                <li>
-                    <a href="#interets" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                        <i class="fas fa-heart"></i> Interests
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                        <i class="fas fa-envelope"></i> Contact
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-</section>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXAzlHA+4m9RvHyyhC+AL5gYF",
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <script src="index.js" defer></script> 
+         <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
 
-<!-- About Me Section -->
-<section id="about">
-    <div class="intro">
-            <h1 class="text-center">Hi, I'm <span style="color: pink;">Aisha</span></h1>
-            <h2 class="text-center">I'm a Software Developer based in London</h2>
-    </div>
-    <h2>About Me</h2>
-    <h3>
-        <i class="fas fa-dumbbell"></i> Fitness Enthusiast | <i class="fas fa-film"></i> Korean Post-Apocalyptic Movie Binger | <i class="fas fa-gamepad"></i> Anime Nerd
-    </h3>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+        <script src="https://kit.fontawesome.com/e6411dd4c6.js" crossorigin="anonymous"></script>
+        <title>Aisha's Portfolio</title>
+    </head>
+    <body>
+        <section id="navbar" class="mb-10">
+            <nav class="bg-pink-800 p-4 text-white">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                    <div class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="assets/images/main-picture.svg" class="h-10" alt="image">
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Aisha Ayinde</span>
+                    </div>
+                    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                            <li>
+                                <a href="#about" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">
+                                    <i class="fas fa-info-circle"></i> About
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#projects" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                                    <i class="fas fa-laptop-code"></i> Projects
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#experience" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                                    <i class="fas fa-laptop-code"></i> Experience
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#interests" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                                    <i class="fas fa-heart"></i> Interests
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                                    <i class="fas fa-envelope"></i> Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
 
-    <div class="about-content">
-            <div class="about-text">
-                <p>
-                    I'm a Software developer who transitioned from teaching.
-                    <br>
-                    In my previous life as a teacher, I discovered a profound joy in fostering learning environments that were not only informative but engaging. 
-                    <br>
-                    This passion for creating interactive spaces seamlessly transitioned into a fascination with web and app development. 
-                    <br>
-                    I found in coding the perfect medium to continue shaping meaningful and dynamic experiences, just like I did in the classroom.
-                </p>
-                <p>My journey has equipped me with a unique skill set that marries the patience and communication skills honed in the classroom 
-                    with the precision and creativity demanded by Software Development.
-                </p>
+        <!-- About Me Section -->
+        <section id="about">
+            <div class="intro">
+                    <h1 class="text-center">Hi, I'm <span style="color: pink;">Aisha</span></h1>
+                    <h2 class="text-center">I'm a Software Developer based in London</h2>
             </div>
-        <img class="about-image" src="assets/images/cats.svg" alt="image">
-    </div>
+            <h2>About Me</h2>
+            <h3>
+                <i class="fas fa-dumbbell"></i> Fitness Enthusiast | <i class="fas fa-film"></i> Korean Post-Apocalyptic Movie Binger | <i class="fas fa-gamepad"></i> Anime Nerd | <i class="fas fa-paw"></i> Cat Lover
+            </h3>
 
-    <h2>Skills</h2>
-    <div class="skills-container">
-        <div class="text-center">
-          <i class="fab fa-html5"></i>
-          <p>HTML</p>
-        </div>
-        <div class="text-center">
-          <i class="fab fa-css3-alt"></i>
-          <p>CSS</p>
-        </div>
-        <div class="text-center">
-          <i class="fab fa-js"></i>
-          <p>JavaScript</p>
-        </div>
-        <div class="text-center">
-          <i class="fab fa-bootstrap"></i>
-          <p>Bootstrap</p>
-        </div>
-        <div class="text-center">
-          <i class="fab fa-tailwind"></i>
-          <p>Tailwind CSS</p>
-        </div>
-        <div class="text-center">
-          <i class="fab fa-react"></i>
-          <p>React</p>
-        </div>
-        <div class="text-center">
-          <i class="fab fa-react"></i>
-          <p>Next.js</p>
-        </div>
-        <div class="text-center">
-          <i class="fab fa-vuejs"></i>
-          <p>Vue.js</p>
-        </div>
-        <div class="text-center">
-          <i class="fab fa-python"></i>
-          <p>Django</p>
-        </div>
-        <div class="text-center">
-          <i class="fab fa-node"></i>
-          <p>Node.js</p>
-        </div>
-        <div class="text-center">
-          <i class="fab fa-node"></i>
-          <p>Express</p>
-        </div>
-        <div class="text-center">
-          <i class="fab fa-python"></i>
-          <p>Python</p>
-        </div>
-        <div class="text-center">
-          <i class="fas fa-database"></i>
-          <p>MongoDB</p>
-        </div>
-        <div class="text-center">
-          <i class="fab fa-mdb"></i>
-          <p>Mongoose</p>
-        </div>
-        <div class="text-center">
-          <i class="fab fa-aws"></i>
-          <p>AWS</p>
-        </div>
-        <div class="text-center">
-          <i class="fab fa-google"></i>
-          <p>Google OAuth</p>
-        </div>
-        <div class="text-center">
-          <i class="fab fa-git"></i>
-          <p>Version control with Git and GitHub</p>
-        </div>
-        <div class="text-center">
-          <i class="fas fa-terminal"></i>
-          <p>Command Line Interface (CLI)</p>
-        </div>
-        <div class="text-center">
-          <i class="fas fa-upload"></i>
-          <p>Deployment with Netlify, Railway, and Vercel</p>
-        </div>
-    </div>
-  </section>
-  
-  
-  
-
-<!-- Projects Section -->
-<section id="projects">
-        <div class="container mx-auto">
-        <h2><i class="fas fa-laptop-code"></i> Projects</h2>
-        </div>
-    
-
-     <!-- Snake Game -->
-     <div class="flex items-center justify-between">
-        <div class="w-1/2">
-        <h2>Snake Game</h2>
-        <h3>Solo Project | 1 Week</h3>
-        <p>This was the first project I completed. My aim was to recreate the classical game snake with a more modern twist.</p>
-        <p>Built with
-            <i class="fab fa-html5" title="HTML5"></i> HTML, 
-            <i class="fab fa-css3-alt" title="CSS3"></i> CSS, and 
-            <i class="fab fa-js" title="JavaScript"></i> JavaScript.
-        </p>
-        <!-- Buttons section -->
-        <div class="flex items-center justify-around mt-4">
-            <!-- Open GitHub Button -->
-            <a href="https://github.com/AishaA14/snake_project#readme" target="_blank" rel="noopener noreferrer" class="text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            <i class="fab fa-github"></i> Open GitHub
-            </a>
+            <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm a Software developer who transitioned from teaching.
+                            <br>
+                            In my previous life as a teacher, I discovered a profound joy in fostering learning environments that were not only informative but engaging. 
+                            <br>
+                            This passion for creating interactive spaces seamlessly transitioned into a fascination with web and app development. 
+                            <br>
+                            I found in coding the perfect medium to continue shaping meaningful and dynamic experiences, just like I did in the classroom.
+                        </p>
+                        <p>My journey has equipped me with a unique skill set that marries the patience and communication skills honed in the classroom 
+                            with the precision and creativity demanded by Software Development.
+                        </p>
+                    </div>
+                <img class="about-image" src="assets/images/cats.svg" alt="image">
+            </div>
         
-            <!-- Open Project Button -->
-            <a href="https://aishaa14.github.io/snake_project/snake.html" target="_blank" rel="noopener noreferrer" class="text-center bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-            <i class="fas fa-play"></i> Open Project
-            </a>
-        </div>
-        </div>
-        <div>
-            <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
-                <!-- The One Piece Orchard content -->
-                <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
-                    <img src="assets/images/snake.png" class="dark:hidden h-[156px] md:h-[278px] w-full rounded-xl" alt="">
-                    <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen-dark.png" class="hidden dark:block h-[156px] md:h-[278px] w-full rounded-lg" alt="">
+
+            <div>
+
+                <h2>Skills</h2>
+
+                <h3>Frontend</h3>
+                <div class="skills-container">
+                    <div class="text-center">
+                        <i class="fab fa-html5"></i>
+                        <p>HTML</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fab fa-sass"></i>
+                        <p>Sass</p>
+                    </div>
+                        <div class="text-center">
+                        <i class="fab fa-js"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fab fa-bootstrap"></i>
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fab fa-tailwind"></i>
+                        <p>Tailwind CSS</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fab fa-react"></i>
+                        <p>React</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fab fa-react"></i>
+                        <p>Next.js</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fab fa-vuejs"></i>
+                        <p>Vue.js</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fab fa-google"></i>
+                        <p>Google OAuth</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fab fa-npm"></i>
+                        <p>NPM</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-cogs"></i>
+                        <p>Gulp.js</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-paint-brush"></i>
+                        <p>UI/UX Design</p>
+                    </div>
+                </div>
+
+                <h3>Backend</h3>
+                <div class="skills-container">
+                    <div class="text-center">
+                        <i class="fab fa-python"></i>
+                        <p>Django</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fab fa-node"></i>
+                        <p>Node.js</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fab fa-node"></i>
+                        <p>Express</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fab fa-python"></i>
+                        <p>Python</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-database"></i>
+                        <p>MongoDB</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fab fa-mdb"></i>
+                        <p>Mongoose</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fab fa-aws"></i>
+                        <p>AWS</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-cogs"></i>
+                        <p>Django Rest Framework</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-cogs"></i>
+                        <p>REST APIs</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-key"></i>
+                        <p>JWT/Token Authentication</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <p>Third Party APIs</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fab fa-python"></i>
+                        <p>PIP</p>
+                    </div>
+                </div>
+
+                <h3>Development Tools</h3>
+                <div class="skills-container">
+                    <div class="text-center">
+                        <i class="fab fa-git"></i>
+                        <p>Version control with Git and GitHub</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-terminal"></i>
+                        <p>Command Line Interface (CLI)</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-upload"></i>
+                        <p>Deployment with Netlify, Railway, and Vercel</p>
+                    </div>
                 </div>
             </div>
-            <div class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
-                <div class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"></div>
+            <div>
+                <button id="back-to-top">Back to Top</button>
             </div>
-        </div>
-    </div>
+        </section> 
 
-        <!-- The One Piece Orchard -->
-        <div class="flex items-center justify-between">
-            <div class="w-1/2">
-            <h2>The One Piece Orchard</h2>
-            <h3>Solo Project | 1 Week</h3>
-            <!-- add tech stack -->
-            <p>Owing to my dedication and love for the long-running anime One Piece, my second project, the One Piece Orchard, acts as an online library for One Piece enthusiasts like myself to keep track of all the 'Devil Fruits' that have appeared throughout the series, keep track of the users of that fruit, and learn more about it.</p>
-            <p>Built with
-                <i class="fab fa-html5" title="HTML5"></i> HTML, 
-                <i class="fab fa-css3-alt" title="CSS3"></i> CSS, and 
-                <i class="fab fa-js" title="JavaScript"></i> JavaScript.
-                <i class="fab fa-node-js" title="Node.js"></i> Node.js,
-                <i class="fab fa-express" title="Express.js"></i> Express.js,
-                <i class="fab fa-vuejs" title="Vue.js"></i> Vue.js, and
-                <i class="fab fa-envira" title="MongoDB"></i> MongoDB.
-            </p>
-            <!-- Buttons section -->
-            <div class="flex items-center justify-around mt-4">
-                <!-- Open GitHub Button -->
-                <a href="https://github.com/AishaA14/the-one-piece-orchard-frontend#readme" target="_blank" rel="noopener noreferrer" class="text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                <i class="fab fa-github"></i> Open GitHub
+        <div id="page-transition" class="page-transition"></div>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container mx-auto">
+                <h2><i class="fas fa-laptop-code"></i> Projects</h2>
+            </div>
+            
+            <!-- Gum Gum -->
+            <div class="flex items-center justify-between">
+                <div class="w-1/2">
+                     <h2>Gum Gum</h2>
+                    <h3>Solo Project | 1 Week</h3>
+                    <p>Gum Gum was inspired by the self-improvement ideology of James Clear's Atomic Habit. It allows the user to set goals and create micro-habits to achieve them. It also visualizes the completion of the daily habit so the user can see their progress.</p>
+                    <p>Built with
+                        <i class="fab fa-html5" title="HTML5"></i> HTML, 
+                        <i class="fab fa-css3-alt" title="CSS3"></i> CSS, 
+                        <i class="fab fa-python" title="Python"></i> Python,
+                        <i class="fas fa-database" title="PostgreSQL"></i> PostgreSQL,
+                        <i class="fab fa-django" title="Django"></i> Django, and
+                        <i class="fab fa-react" title="React.js"></i> React.js.
+                    </p>
+                            <!-- Buttons section -->
+                    <div class="flex items-center justify-around mt-4">
+                            <!-- Open GitHub Button -->
+                        <a href="https://github.com/AishaA14/Project4-frontend" target="_blank" rel="noopener noreferrer" class="text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            <i class="fab fa-github"></i> Open GitHub
+                        </a>
+                        
+                            <!-- Open Project Button -->
+                        <a href="https://project4-frontend-production-dadf.up.railway.app" target="_blank" rel="noopener noreferrer" class="text-center bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                            <i class="fas fa-play"></i> Open Project
+                        </a>
+                    </div>
+                </div>
+                <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
+                     <!-- Gum Gum content -->
+                    <div class="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
+                    <div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
+                    <div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
+                    <div class="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
+                    <div class="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
+                        <img src="assets/images/gghabit.png" class="dark:hidden w-[272px] h-[572px]" alt="">
+                        <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-dark.png" class="hidden dark:block w-[272px] h-[572px]" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fitnomenal -->
+            <div class="flex items-center justify-between">
+                <div class="w-1/2">
+                    <h2>Fitnomenal</h2>
+                    <h3>Group Project | 1 Week</h3>
+                    <p>Following my love of fitness, I created Fitnomenal alongside two team members. The app is built for people interested in getting fit but don't know where to start, using a workout generator API to randomly generate a daily workout for the user. The app also tracks the user's progress in relation to the goals they set for themselves to keep them motivated.</p>
+                    <p>Built with
+                         <i class="fab fa-html5" title="HTML5"></i> HTML, 
+                         <i class="fab fa-css3-alt" title="CSS3"></i> CSS, 
+                        <i class="fab fa-js" title="JavaScript"></i> JavaScript,
+                        <i class="fab fa-node-js" title="Node.js"></i> Node.js,
+                        <i class="fab fa-express" title="Express.js"></i> Express.js,
+                        <i class="fab fa-react" title="React.js"></i> React.js, and
+                        <i class="fab fa-envira" title="MongoDB"></i> MongoDB.
+                    </p>
+                        <!-- Buttons section -->
+                    <div class="flex items-center justify-around mt-4">
+                            <!-- Open GitHub Button -->
+                        <a href="https://github.com/AishaA14/fitnomenal" target="_blank" rel="noopener noreferrer" class="text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            <i class="fab fa-github"></i> Open GitHub
+                        </a>
+                        
+                            <!-- Open Project Button -->
+                        <a href="https://fitnomenal-workouts.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-center bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                            <i class="fas fa-play"></i> Open Project
+                         </a>
+                    </div>
+                </div>
+                <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
+                     <!-- Fitnomenal content -->
+                    <div class="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
+                    <div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
+                    <div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
+                    <div class="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
+                    <div class="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
+                            <img src="assets/images/fn.png" class="dark:hidden w-[272px] h-[572px]" alt="">
+                            <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-dark.png" class="hidden dark:block w-[272px] h-[572px]" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- The One Piece Orchard -->
+            <div class="flex items-center justify-between">
+                <div class="w-1/2">
+                    <h2>The One Piece Orchard</h2>
+                    <h3>Solo Project | 1 Week</h3>
+                    <!-- add tech stack -->
+                    <p>Owing to my dedication and love for the long-running anime One Piece, my second project, the One Piece Orchard, acts as an online library for One Piece enthusiasts like myself to keep track of all the 'Devil Fruits' that have appeared throughout the series, keep track of the users of that fruit, and learn more about it.</p>
+                    <p>Built with
+                        <i class="fab fa-html5" title="HTML5"></i> HTML, 
+                        <i class="fab fa-css3-alt" title="CSS3"></i> CSS, and 
+                        <i class="fab fa-js" title="JavaScript"></i> JavaScript.
+                        <i class="fab fa-node-js" title="Node.js"></i> Node.js,
+                        <i class="fab fa-express" title="Express.js"></i> Express.js,
+                        <i class="fab fa-vuejs" title="Vue.js"></i> Vue.js, and
+                        <i class="fab fa-envira" title="MongoDB"></i> MongoDB.
+                    </p>
+                    <!-- Buttons section -->
+                    <div class="flex items-center justify-around mt-4">
+                        <!-- Open GitHub Button -->
+                        <a href="https://github.com/AishaA14/the-one-piece-orchard-frontend#readme" target="_blank" rel="noopener noreferrer" class="text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        <i class="fab fa-github"></i> Open GitHub
+                        </a>
+                    
+                        <!-- Open Project Button -->
+                        <a href="https://the-one-piece-orchard.netlify.app/fruits" target="_blank" rel="noopener noreferrer" class="text-center bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                        <i class="fas fa-play"></i> Open Project
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                        <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                            <img src="assets/images/opo.png" class="dark:hidden h-[156px] md:h-[278px] w-full rounded-xl" alt="">
+                            <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen-dark.png" class="hidden dark:block h-[156px] md:h-[278px] w-full rounded-lg" alt="">
+                        </div>
+                    </div>
+                    <div class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                        <div class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Snake Game -->
+            <div class="flex items-center justify-between">
+                <div class="w-1/2">
+                    <h2>Snake Game</h2>
+                    <h3>Solo Project | 1 Week</h3>
+                    <p>This was the first project I completed. My aim was to recreate the classical game snake with a more modern twist.</p>
+                    <p>Built with
+                        <i class="fab fa-html5" title="HTML5"></i> HTML, 
+                        <i class="fab fa-css3-alt" title="CSS3"></i> CSS, and 
+                        <i class="fab fa-js" title="JavaScript"></i> JavaScript.
+                    </p>
+                    <!-- Buttons section -->
+                    <div class="flex items-center justify-around mt-4">
+                        <!-- Open GitHub Button -->
+                        <a href="https://github.com/AishaA14/snake_project#readme" target="_blank" rel="noopener noreferrer" class="text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        <i class="fab fa-github"></i> Open GitHub
+                        </a>
+                    
+                        <!-- Open Project Button -->
+                        <a href="https://aishaa14.github.io/snake_project/snake.html" target="_blank" rel="noopener noreferrer" class="text-center bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                        <i class="fas fa-play"></i> Open Project
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
+                        <!-- The One Piece Orchard content -->
+                        <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
+                            <img src="assets/images/snake.png" class="dark:hidden h-[156px] md:h-[278px] w-full rounded-xl" alt="">
+                            <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen-dark.png" class="hidden dark:block h-[156px] md:h-[278px] w-full rounded-lg" alt="">
+                        </div>
+                    </div>
+                    <div class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
+                        <div class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <button id="back-to-top">Back to Top</button>
+            </div>
+        </section>
+
+
+        <section id="experience">
+            <h2>Previous Experience</h2>
+            <div class="flex items-center justify-between">
+                <div>
+                    <h2>Student | General Assembly Software Engineering Immersive</h2>
+                    <h3>September 2023 - November 2023</h3>
+                    <p>
+                        Completed a 12-week  program,  exploring the fundamental principles of full-stack web development.
+                        Engaged collaboratively in a team environment, actively participating in daily standups to enhance communication and teamwork skills.
+                        Applied Agile methodologies fostering adaptability and efficiency in project development.
+                        Demonstrated practical understanding through the deployment of four projects.
+                    </p>
+                </div>
+                <div>
+                    <h2>Teacher (Psychology/Science) | Brampton Manor Academy</h2>
+                    <h3>July 2022 - July 2023</h3>
+                    <p>
+                        Developed strong communication and presentation skills through teaching Psychology in the KS3-KS5 curriculum.
+
+                        Demonstrated organisational and planning abilities by creating engaging lessons that catered to diverse learning needs.
+
+                        Illustrated adaptasbility and problem-solving acumen by identifying and addressing diverse learning needs and adapting teaching methods to enhance student comprehension and engagement.
+
+                        Fostered a supportive and collaborative classroom atmosphere, prioritizing student well-being and growth through effective communication, empathy, and responsive teaching strategies."
+                    </p>
+                </div>
+            </div>
+            <div>
+                <button id="back-to-top">Back to Top</button>
+            </div>
+        </section>
+
+        <!-- Interests Section -->
+        <section id="interests">
+            <h2>My Interests</h2>
+
+            <div class="flex items-center justify-between">
+                <div class="w-1/2">
+                <h3>Fitness and well-being</h3>
+                <p>
+                    I take joy in being active and prioritizing a healthy diet. 
+                    Regular visits to the gym and incorporating yoga into my routine are important aspects of my lifestyle, 
+                    contributing to the overall well-being of both my body and mind.
+                </p>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between">
+                <div class="w-1/2">
+                </div>
+                <h3>Anime Enthusiast:</h3>
+                <p>
+                    Immersing myself in the captivating worlds of anime is a cherished pastime. 
+                    Among my top recommendations are the epic journey of "One Piece," the hilarious psychic adventures in "Saiki Kusuo," and the breathtaking action of "Demon Slayer."
+                    Anime serves as a constant source of inspiration and entertainment in my life.
+                </p>
+            </div>
+
+            <div class="flex items-center justify-between">
+                <div class="w-1/2">
+                <h3>Korean zombie movies</h3>
+                <p>
+                    Exploring the fascinating world of Korean post-apocalyptic films is a guilty pleasure of mine.
+                    I've recently been drawn into the suspenseful drama of "Sweet Home." For those seeking more cinematic thrills, 
+                    I highly suggest checking out "All of Us Are Dead," "Alive," and the first season of "Sweet Home."
+                </p>
+                </div>
+            </div>
+            </div>
+
+
+
+            <div>
+                <button id="back-to-top">Back to Top</button>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Feel free to reach out to me on</h2>
+            <div class="contacts-container">
+                <!-- GitHub Icon and Link -->
+                <a href="https://github.com/AishaA14" target="_blank" rel="noopener noreferrer" class="text-center">
+                    <i class="fab fa-github"></i>
+                    <p>GitHub</p>
                 </a>
             
-                <!-- Open Project Button -->
-                <a href="https://the-one-piece-orchard.netlify.app/fruits" target="_blank" rel="noopener noreferrer" class="text-center bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                <i class="fas fa-play"></i> Open Project
+                <!-- LinkedIn Icon and Link -->
+                <a href="https://www.linkedin.com/in/aisha-ayinde14/" target="_blank" rel="noopener noreferrer" class="text-center">
+                    <i class="fab fa-linkedin"></i>
+                    <p>LinkedIn</p>
                 </a>
-            </div>
-         </div>
-         <div>
-            <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
-                <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
-                    <img src="assets/images/opo.png" class="dark:hidden h-[156px] md:h-[278px] w-full rounded-xl" alt="">
-                    <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen-dark.png" class="hidden dark:block h-[156px] md:h-[278px] w-full rounded-lg" alt="">
-                </div>
-            </div>
-            <div class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
-                <div class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"></div>
-            </div>
-            </div>
-        </div>
-
-        <!-- Fitnomenal -->
-        <div class="flex items-center justify-between">
-            <div class="w-1/2">
-                <h2>Fitnomenal</h2>
-                <h3>Group Project | 1 Week</h3>
-                <p>Following my love of fitness, I created Fitnomenal alongside two team members. The app is built for people interested in getting fit but don't know where to start, using a workout generator API to randomly generate a daily workout for the user. The app also tracks the user's progress in relation to the goals they set for themselves to keep them motivated.</p>
-                <p>Built with
-                    <i class="fab fa-html5" title="HTML5"></i> HTML, 
-                    <i class="fab fa-css3-alt" title="CSS3"></i> CSS, 
-                    <i class="fab fa-js" title="JavaScript"></i> JavaScript,
-                    <i class="fab fa-node-js" title="Node.js"></i> Node.js,
-                    <i class="fab fa-express" title="Express.js"></i> Express.js,
-                    <i class="fab fa-react" title="React.js"></i> React.js, and
-                    <i class="fab fa-envira" title="MongoDB"></i> MongoDB.
-                </p>
-                <!-- Buttons section -->
-                <div class="flex items-center justify-around mt-4">
-                    <!-- Open GitHub Button -->
-                    <a href="https://github.com/AishaA14/fitnomenal" target="_blank" rel="noopener noreferrer" class="text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                    <i class="fab fa-github"></i> Open GitHub
-                    </a>
-                
-                    <!-- Open Project Button -->
-                    <a href="https://fitnomenal-workouts.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-center bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                    <i class="fas fa-play"></i> Open Project
-                    </a>
-                </div>
-            </div>
-            <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
-                <!-- Fitnomenal content -->
-                <div class="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
-                <div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
-                <div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
-                <div class="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
-                <div class="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
-                    <img src="assets/images/fn.png" class="dark:hidden w-[272px] h-[572px]" alt="">
-                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-dark.png" class="hidden dark:block w-[272px] h-[572px]" alt="">
-                </div>
-            </div>
-        </div>
-
-        <!-- Gum Gum -->
-        <div class="flex items-center justify-between">
-            <div class="w-1/2">
-                <h2>Gum Gum</h2>
-                <h3>Solo Project | 1 Week</h3>
-                <p>Gum Gum was inspired by the self-improvement ideology of James Clear's Atomic Habit. It allows the user to set goals and create micro-habits to achieve them. It also visualizes the completion of the daily habit so the user can see their progress.</p>
-                <p>Built with
-                    <i class="fab fa-html5" title="HTML5"></i> HTML, 
-                    <i class="fab fa-css3-alt" title="CSS3"></i> CSS, 
-                    <i class="fab fa-python" title="Python"></i> Python,
-                    <i class="fas fa-database" title="PostgreSQL"></i> PostgreSQL,
-                    <i class="fab fa-django" title="Django"></i> Django, and
-                    <i class="fab fa-react" title="React.js"></i> React.js.
-                </p>
-                    <!-- Buttons section -->
-                <div class="flex items-center justify-around mt-4">
-                    <!-- Open GitHub Button -->
-                    <a href="https://github.com/AishaA14/Project4-frontend" target="_blank" rel="noopener noreferrer" class="text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                    <i class="fab fa-github"></i> Open GitHub
-                    </a>
-                
-                    <!-- Open Project Button -->
-                    <a href="https://project4-frontend-production-dadf.up.railway.app" target="_blank" rel="noopener noreferrer" class="text-center bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                    <i class="fas fa-play"></i> Open Project
-                    </a>
-                </div>
-                </div>
-            <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
-                <!-- Gum Gum content -->
-                <div class="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
-                <div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
-                <div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
-                <div class="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
-                <div class="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
-                    <img src="assets/images/gghabit.png" class="dark:hidden w-[272px] h-[572px]" alt="">
-                    <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-dark.png" class="hidden dark:block w-[272px] h-[572px]" alt="">
-                </div>
-            </div>
-        </div>
-</section>
-
-
-<section id="experience">
-<h2>Previous Experience</h2>
-<div class="flex items-center justify-between">
-    <div>
-        <h2>Student | General Assembly software Engineering Immersive</h2>
-        <h3>September 2023 - November 2023</h3>
-        <p>
-            Completed a 12-week  program,  exploring the fundamental principles of full-stack web development.
-            Engaged collaboratively in a team environment, actively participating in daily standups to enhance communication and teamwork skills.
-            Applied Agile methodologies fostering adaptability and efficiency in project development.
-            Demonstrated practical understanding through the deployment of four projects.
-        </p>
-    </div>
-    <div>
-        <h2>Teacher (Psychology/Science) | Brampton Manor Academy</h2>
-        <h3>July 2022 - July 2023</h3>
-        <p>
-            Developed strong communication and presentation skills through teaching Psychology in the KS3-KS5 curriculum.
-            Demonstrated organisational and planning abilities by creating engaging lessons that catered to diverse learning needs.
-            Illustrated problem-solving acumen by identifying and addressing diverse learning needs and adapting teaching methods to enhance student comprehension and engagement.
-        </p>
-    </div>
-</div>
-</section>
-
-<!-- Interests Section -->
-<section id="interests">
-    <h2>My Interests</h2>
-</section>
-
-<!-- Contact Section -->
-<section id="contact">
-    <h2>Feel free to reach out to me on</h2>
-    <div class="contacts-container">
-      <!-- GitHub Icon and Link -->
-      <a href="https://github.com/AishaA14" target="_blank" rel="noopener noreferrer" class="text-center">
-        <i class="fab fa-github"></i>
-        <p>GitHub</p>
-      </a>
-  
-      <!-- LinkedIn Icon and Link -->
-      <a href="https://www.linkedin.com/in/aisha-ayinde14/" target="_blank" rel="noopener noreferrer" class="text-center">
-        <i class="fab fa-linkedin"></i>
-        <p>LinkedIn</p>
-      </a>
-  
-      <!-- Email Icon and Link -->
-      <a href="mailto:aayinde723@gmail.com" class="text-center">
-        <i class="fas fa-envelope"></i>
-        <p>Email</p>
-      </a>
-    </div>
-  </section>
-  
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
-<script src="https://kit.fontawesome.com/e6411dd4c6.js" crossorigin="anonymous"></script>
-</body>
+            
+                <!-- Email Icon and Link -->
+                <a href="mailto:aayinde723@gmail.com" class="text-center">
+                    <i class="fas fa-envelope"></i>
+                    <p>Email</p>
+                </a>
+            </div>   
+        </section>
+        
+        <div class="custom-cursor"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    </body>
 </html>
-
-
-<!-- email js? to send a message thing -->
-<!-- or contact form and send email? -->
-<!-- find recruiters on linkedin: through search and harass  -->
-<!-- linkedin premium -->
-<!-- give recommendations on linkedIn -->
