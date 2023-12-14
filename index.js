@@ -20,18 +20,21 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         // Always show the navbar
-        var navbar = document.getElementById('navbar');
+        const navbar = document.getElementById('navbar');
         if (navbar) {
             navbar.style.display = 'block';
         }
     }
 
-    const mobileMenuButton = document.querySelector('#mobile-menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-  
-    mobileMenuButton.addEventListener('click', function () {
-        mobileMenu.classList.toggle('hidden');
-    });
+        // Get the button and the menu
+        const menuButton = document.querySelector('[data-collapse-toggle="navbar-default"]');
+        const menu = document.getElementById('navbar-sticky');
+
+        // Add click event listener to the button
+        menuButton.addEventListener('click', function () {
+        // Toggle the visibility of the menu
+        menu.classList.toggle('hidden');
+        });
 
 
     const backToTopButton = document.getElementById("back-to-top");
