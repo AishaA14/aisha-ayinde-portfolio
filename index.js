@@ -26,15 +26,18 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-        // Get the button and the menu
-        const menuButton = document.querySelector('[data-collapse-toggle="navbar-default"]');
-        const menu = document.getElementById('navbar-sticky');
+       // Get the button and the menu
+    var menuButton = document.querySelector('[data-collapse-toggle="navbar-default"]');
+    var menu = document.getElementById('navbar-sticky');
 
-        // Add click event listener to the button
-        menuButton.addEventListener('click', function () {
+    // Check if the button and menu exist
+    if (menuButton && menu) {
+      // Add click event listener to the button
+      menuButton.addEventListener('click', function () {
         // Toggle the visibility of the menu
         menu.classList.toggle('hidden');
-        });
+      });
+    }
 
 
     const backToTopButton = document.getElementById("back-to-top");
