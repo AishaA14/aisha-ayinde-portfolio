@@ -26,18 +26,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-       // Get the button and the menu
-    var menuButton = document.querySelector('[data-collapse-toggle="navbar-default"]');
-    var menu = document.getElementById('navbar-sticky');
+    var toggleButton = document.getElementById("toggleButton");
+    var menuContainer = document.querySelector(".menu-container");
 
-    // Check if the button and menu exist
-    if (menuButton && menu) {
-      // Add click event listener to the button
-      menuButton.addEventListener('click', function () {
-        // Toggle the visibility of the menu
-        menu.classList.toggle('hidden');
-      });
-    }
+    toggleButton.addEventListener("click", function() {
+        menuContainer.classList.toggle("hidden");
+    });
 
 
     const backToTopButton = document.getElementById("back-to-top");

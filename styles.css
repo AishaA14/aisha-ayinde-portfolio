@@ -18,19 +18,10 @@ a, button {
 }
 /* Add mobile-specific styles */
 @media (max-width: 767px) {
-    #navbar-sticky {
-      display: none; /* Hide desktop menu on mobile */
-    }
-  
-    #mobile-menu {
-      display: block; /* Show mobile menu */
-    }
+ 
   }
 
-/* Add styles for the mobile menu icon */
-#mobile-menu-toggle {
-    margin-right: 0.5rem;
-  }
+
   
   
 .intro {
@@ -229,4 +220,8 @@ p {
 
 #back-to-top:hover {
     background-color: #0056b3;
+}
+
+.menu-container.hidden {
+    display: none;
 }
