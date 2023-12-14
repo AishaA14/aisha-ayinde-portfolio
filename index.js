@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var menuContainer = document.querySelector(".menu-container");
 
     toggleButton.addEventListener("click", function() {
-        menuContainer.classList.toggle("hidden");
+        menuContainer.classList.toggle("active");
     });
 
 

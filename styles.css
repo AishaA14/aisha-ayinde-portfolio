@@ -18,7 +18,13 @@ a, button {
 }
 /* Add mobile-specific styles */
 @media (max-width: 767px) {
- 
+    .menu-container {
+        display: none;
+    }
+
+    .menu-container.active {
+        display: flex;
+    }
   }
 
 
@@ -220,8 +226,4 @@ p {
 
 #back-to-top:hover {
     background-color: #0056b3;
-}
-
-.menu-container.hidden {
-    display: none;
 }
