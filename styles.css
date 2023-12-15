@@ -30,6 +30,10 @@ a, button {
         font-size: 14px; /* Example: reduce font size */
         padding: 8px;    /* Example: reduce padding */
     }
+    p {
+        font-size: 14px; /* Decrease font size for smaller screens */
+        margin-bottom: 16px; /* Decrease bottom margin for smaller screens */
+    }
   }
 
 .intro {
@@ -282,4 +286,7 @@ p {
 
 #experience {
     font-size: 20px;
+}
+.fitness {
+    padding: 200px;
 }
