@@ -25,6 +25,13 @@ document.addEventListener("DOMContentLoaded", function() {
             navbar.style.display = 'block';
         }
     }
+        const carousel = document.getElementById('controls-carousel');
+
+        // Set a higher z-index for the navbar
+        navbar.style.zIndex = '2';
+
+        // Set a lower z-index for the carousel
+        carousel.style.zIndex = '1';
 
     var toggleButton = document.getElementById("toggleButton");
     var menuContainer = document.querySelector(".menu-container");
@@ -59,5 +66,40 @@ document.addEventListener("DOMContentLoaded", function() {
         cursor.style.top = y + 'px';
     });
    
+    const titleElement = document.getElementById('title');
+    const subtitleElement = document.getElementById('subtitle');
+    const text1 = "Hi, I'm Aisha";
+    const text2 = "I'm a Software Developer based in London";
+    const speed = 100; // typing speed in milliseconds
+
+    function typeWriter(element, text, i, cb) {
+        if (i < text.length) {
+            if (text.substring(i, i + 5).toUpperCase() === 'AISHA') {
+                // If the current substring is 'AISHA', add it with a class for styling
+                element.innerHTML += '<span class="pink-text">' + text.substring(i, i + 5) + '</span>';
+                i += 4; // Skip the next four characters
+            } else {
+                // For other characters, add them normally
+                element.innerHTML += text.charAt(i);
+            }
+            i++;
+            setTimeout(function() {
+                typeWriter(element, text, i, cb);
+            }, speed);
+        } else {
+            setTimeout(cb, speed * 2);
+        }
+    }
+
+    // Start the typewriter effect
+    typeWriter(titleElement, text1, 0, function() {
+        // Add a cursor element
+        titleElement.insertAdjacentHTML('beforeend', '<span class="cursor"></span>');
+        typeWriter(subtitleElement, text2, 0, function() {
+            // Remove the cursor after typing
+            document.querySelector('.cursor').remove();
+        });
+    });
+
   });
 

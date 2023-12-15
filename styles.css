@@ -25,11 +25,13 @@ a, button {
     .menu-container.active {
         display: flex;
     }
+    .button-slider {
+        /* Adjust the styles for smaller screens */
+        font-size: 14px; /* Example: reduce font size */
+        padding: 8px;    /* Example: reduce padding */
+    }
   }
 
-
-  
-  
 .intro {
     height: 100%;
     width: 100%;
@@ -82,6 +84,7 @@ h3 {
     gap: 20px;
     text-align: center;
     justify-content: space-around;
+    margin: 70px;
 }
 
 .skills-container h2 {
@@ -226,4 +229,57 @@ p {
 
 #back-to-top:hover {
     background-color: #0056b3;
+}
+
+.carousel-image {
+    max-width: 100%; /* Set the maximum width to 100% of the parent container */
+    max-height: 100%; /* Set the maximum height to 100% of the parent container */
+    width: auto; /* Ensure the image maintains its aspect ratio */
+    height: auto; /* Ensure the image maintains its aspect ratio */
+}
+
+#controls-carousel {
+    max-width: 600px; /* Set the maximum width of the carousel container */
+    margin: 0 auto; /* Center the carousel container on the page */
+}
+
+/* Add a CSS style for the carousel wrapper */
+.carousel-wrapper {
+    max-height: 200px; /* Set the maximum height of the carousel wrapper */
+    overflow: hidden; /* Hide any content that overflows the specified dimensions */
+    border-radius: 10px; /* Optionally add border-radius for rounded corners */
+}
+
+#controls-carousel {
+    z-index: 1; /* Set a lower z-index for the carousel */
+}
+
+#navbar {
+    z-index: 2; /* Set a higher z-index for the navbar */
+}
+
+.pink-text {
+    color: pink;
+}
+
+.project-text {
+    padding: 35px;
+}
+.project-content {
+    padding: 50px;
+}
+.single-project {
+    margin: 50px;
+}
+
+#contact {
+    padding: 200px;
+}
+
+#italics {
+    font-style: italic;
+}
+
+#experience {
+    font-size: 20px;
 }

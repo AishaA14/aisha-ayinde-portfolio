@@ -9,60 +9,58 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXAzlHA+4m9RvHyyhC+AL5gYF", crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
         <script src="index.js" defer></script> 
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
         <script src="https://kit.fontawesome.com/e6411dd4c6.js" crossorigin="anonymous"></script>
         <title>Aisha's Portfolio</title>
     </head>
     <body>
         <section id="navbar">
-   
+            <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                    <a href="https://aishaa14.github.io/my-portfolio/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="assets/images/main-picture.svg" class="h-24" alt="Image">
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Aisha Ayinde</span>
+                    </a>
 
- <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="https://aishaa14.github.io/my-portfolio/" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="assets/images/main-picture.svg" class="h-24" alt="Image">
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Aisha Ayinde</span>
-    </a>
+                    <button id="toggleButton" data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                        </svg>
+                    </button>
 
-    <button id="toggleButton" data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-    </button>
-
-    <div class="items-center justify-between w-full md:flex md:w-auto md:order-1 menu-container">
-        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <li>
-            <a href="#about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"> <i class="fas fa-info-circle"></i>About</a>
-          </li>
-        <li>
-          <a href="#projects" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"> <i class="fas fa-laptop-code"></i>Projects</a>
-        </li>
-        <li>
-          <a href="#experience" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"> <i class="fas fa-laptop-code"></i>Experiences</a>
-        </li>
-        <li>
-          <a href="#interests" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"> <i class="fas fa-heart"></i> Interests</a>
-        </li>
-        <li>
-          <a href="#contact" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"> <i class="fas fa-envelope"></i>Contact</a>
-        </li>
-      </ul>
-    </div>
-    </div> 
-  
-  </nav>
-  
-
+                    <div class="items-center justify-between w-full md:flex md:w-auto md:order-1 menu-container">
+                        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                            <li>
+                                <a href="#about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"> <i class="fas fa-info-circle"></i>About</a>
+                            </li>
+                            <li>
+                                <a href="#projects" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"> <i class="fas fa-laptop-code"></i>Projects</a>
+                            </li>
+                            <li>
+                                <a href="#experience" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"> <i class="fas fa-suitcase"></i>Experiences</a>
+                            </li>
+                            <li>
+                                <a href="#interests" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"> <i class="fas fa-heart"></i> Interests</a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"> <i class="fas fa-envelope"></i>Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+            </nav>
         </section>
 
         <!-- About Me Section -->
         <section id="about">
             <div class="intro">
-                    <h1 class="text-center">Hi, I'm <span style="color: pink;">Aisha</span></h1>
-                    <h2 class="text-center">I'm a Software Developer based in London</h2>
+                    <h1 id="title" class="text-center"></h1>
+                    <h2 id="subtitle" class="text-center"></h2>
             </div>
             <h2>About Me</h2>
             <h3>
@@ -87,7 +85,7 @@
                 <img class="about-image" src="assets/images/cats.svg" alt="image">
             </div>
         
-
+            <!-- Skills -->
             <div>
 
                 <h2>Skills</h2>
@@ -221,83 +219,30 @@
             </div>
         </section> 
 
-        <div id="page-transition" class="page-transition"></div>
-
         <!-- Projects Section -->
         <section id="projects">
             <div class="container mx-auto">
                 <h2><i class="fas fa-laptop-code"></i> Projects</h2>
             </div>
-            
-
-
-            <div id="controls-carousel" class="relative w-full" data-carousel="static">
-                <!-- Carousel wrapper -->
-                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                     <!-- Item 1 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/docs/images/carousel/carousel-1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                        <img src="/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 3 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 4 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/docs/images/carousel/carousel-4.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 5 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/docs/images/carousel/carousel-5.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                </div>
-                <!-- Slider controls -->
-                <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                        </svg>
-                        <span class="sr-only">Previous</span>
-                    </span>
-                </button>
-                <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                        </svg>
-                        <span class="sr-only">Next</span>
-                    </span>
-                </button>
-            </div>
-            
-
-
-
-
-
-
-
-
-
 
 
             <!-- Gum Gum -->
-            <div class="flex items-center justify-between">
-                <div class="w-1/2">
-                     <h2>Gum Gum</h2>
+            <div class="project-content flex items-center justify-between">
+                <div class="project-text w-1/2">
+                    <h2>Gum Gum</h2>
                     <h3>Solo Project | 1 Week</h3>
-                    <p>Gum Gum was inspired by the self-improvement ideology of James Clear's Atomic Habit. It allows the user to set goals and create micro-habits to achieve them. It also visualizes the completion of the daily habit so the user can see their progress.</p>
-                    <p>Built with
-                        <i class="fab fa-html5" title="HTML5"></i> HTML, 
-                        <i class="fab fa-css3-alt" title="CSS3"></i> CSS, 
-                        <i class="fab fa-python" title="Python"></i> Python,
-                        <i class="fas fa-database" title="PostgreSQL"></i> PostgreSQL,
-                        <i class="fab fa-django" title="Django"></i> Django, and
-                        <i class="fab fa-react" title="React.js"></i> React.js.
+                    <br>
+                    <p>Gum Gum was inspired by the self-improvement ideology of James Clear's Atomic Habit.
+                         It allows the user to set goals and create micro-habits to achieve them. 
+                         It also visualizes the completion of the daily habit so the user can see their progress.</p>
+                    <br>     
+                    <p>
+                        <i class="fab fa-html5" title="HTML5"></i> HTML
+                        <i class="fab fa-css3-alt" title="CSS3"></i> CSS
+                        <i class="fab fa-python" title="Python"></i> Python
+                        <i class="fas fa-database" title="PostgreSQL"></i> PostgreSQL
+                        <i class="fab fa-django" title="Django"></i> Django
+                        <i class="fab fa-react" title="React.js"></i> React.js
                     </p>
                             <!-- Buttons section -->
                     <div class="flex items-center justify-around mt-4">
@@ -312,78 +257,166 @@
                         </a>
                     </div>
                 </div>
-                <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
-                     <!-- Gum Gum content -->
-                    <div class="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
-                    <div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
-                    <div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
-                    <div class="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
-                    <div class="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
-                        <img src="assets/images/gghabit.png" class="dark:hidden w-[272px] h-[572px]" alt="">
-                        <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-dark.png" class="hidden dark:block w-[272px] h-[572px]" alt="">
+                <!-- Image carousel -->
+                <div id="controls-carousel" class="relative w-full" data-carousel="static">
+                    <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px]">
+                        <div class="h-[32px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[72px] rounded-s-lg"></div>
+                        <div class="h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
+                        <div class="h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
+                        <div class="h-[64px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
+                        <div class="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800 relative">
+                            <!-- Carousel wrapper -->
+                            <div id="controls-carousel" class="relative h-full" data-carousel="static">
+                                <!-- Item 1 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <img src="assets/images/demo/gg4.png" class="carousel-image absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                </div>
+                                <!-- Item 2 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                                    <img src="assets/images/demo/gg1.png" class="carousel-image absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                </div>
+                                <!-- Item 3 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <img src="assets/images/demo/gg2.png" class="carousel-image absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                </div>
+                                <!-- Item 4 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <img src="assets/images/demo/gg3.png" class="carousel-image absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    
+                    <!-- Slider controls -->
+                    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-pink dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 group focus:outline-none" data-carousel-next>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-pink dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>  
             </div>
+
             <div>
                 <button id="back-to-top">Back to Top</button>
             </div>
 
+
             <!-- Fitnomenal -->
             <div class="flex items-center justify-between">
-                <div class="w-1/2">
+                <!-- Image carousel -->
+                <div id="controls-carousel" class="relative w-full" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px]">
+                        <div class="h-[32px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[72px] rounded-s-lg"></div>
+                        <div class="h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
+                        <div class="h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
+                        <div class="h-[64px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
+                        <div class="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800 relative">
+                            <!-- Carousel wrapper -->
+                            <div id="controls-carousel" class="relative h-full" data-carousel="static">
+                                <!-- Item 1 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <img src="assets/images/demo/fn5.png" class="carousel-image absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                </div>
+                                <!-- Item 2 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                                    <img src="assets/images/demo/fn1.png" class="carousel-image absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                </div>
+                                <!-- Item 3 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <img src="assets/images/demo/fn2.png" class="carousel-image absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                </div>
+                                <!-- Item 4 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <img src="assets/images/demo/fn3.png" class="carousel-image absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                </div>
+                                <!-- Item 5 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <img src="assets/images/demo/fn4.png" class="carousel-image absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slider controls -->
+                    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-pink dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 group focus:outline-none" data-carousel-next>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-pink dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>  
+                <div class="project-text w-1/2 ml-6">
                     <h2>Fitnomenal</h2>
                     <h3>Group Project | 1 Week</h3>
-                    <p>Following my love of fitness, I created Fitnomenal alongside two team members. The app is built for people interested in getting fit but don't know where to start, using a workout generator API to randomly generate a daily workout for the user. The app also tracks the user's progress in relation to the goals they set for themselves to keep them motivated.</p>
-                    <p>Built with
-                         <i class="fab fa-html5" title="HTML5"></i> HTML, 
-                         <i class="fab fa-css3-alt" title="CSS3"></i> CSS, 
-                        <i class="fab fa-js" title="JavaScript"></i> JavaScript,
-                        <i class="fab fa-node-js" title="Node.js"></i> Node.js,
-                        <i class="fab fa-express" title="Express.js"></i> Express.js,
-                        <i class="fab fa-react" title="React.js"></i> React.js, and
-                        <i class="fab fa-envira" title="MongoDB"></i> MongoDB.
+                    <br>
+                    <p>Following my love of fitness, I created Fitnomenal alongside two team members. 
+                        The main feature of the app is a workout generator API to randomly generate a daily workout for the user. 
+                        The app also tracks the user's progress in relation to the goals they set for themselves to keep them motivated. My primary responsibilities were  defining models and api endpoints for daily workouts 
+                        and workout history and curating a vibrant colour scheme on the frontend.</p>
+                    <br>
+                    <p>
+                        <i class="fab fa-html5" title="HTML5"></i> HTML
+                        <i class="fab fa-css3-alt" title="CSS3"></i> CSS
+                        <i class="fab fa-js" title="JavaScript"></i> JavaScript
+                        <i class="fab fa-node-js" title="Node.js"></i> Node.js
+                        <i class="fab fa-express" title="Express.js"></i> Express.js
+                        <i class="fab fa-react" title="React.js"></i> React.js
+                        <i class="fab fa-envira" title="MongoDB"></i> MongoDB
                     </p>
-                        <!-- Buttons section -->
+                    <!-- Buttons section -->
                     <div class="flex items-center justify-around mt-4">
-                            <!-- Open GitHub Button -->
+                        <!-- Open GitHub Button -->
                         <a href="https://github.com/AishaA14/fitnomenal" target="_blank" rel="noopener noreferrer" class="text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                             <i class="fab fa-github"></i> Open GitHub
                         </a>
-                        
-                            <!-- Open Project Button -->
+
+                        <!-- Open Project Button -->
                         <a href="https://fitnomenal-workouts.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-center bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
                             <i class="fas fa-play"></i> Open Project
-                         </a>
-                    </div>
-                </div>
-                <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
-                     <!-- Fitnomenal content -->
-                    <div class="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
-                    <div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
-                    <div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
-                    <div class="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
-                    <div class="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
-                            <img src="assets/images/fn.png" class="dark:hidden w-[272px] h-[572px]" alt="">
-                            <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-dark.png" class="hidden dark:block w-[272px] h-[572px]" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
 
+
             <!-- The One Piece Orchard -->
-            <div class="flex items-center justify-between">
-                <div class="w-1/2">
+            <div class="single-project flex items-center justify-between">
+                <div class="project-text w-1/2">
                     <h2>The One Piece Orchard</h2>
                     <h3>Solo Project | 1 Week</h3>
-                    <!-- add tech stack -->
+                    <br>
                     <p>Owing to my dedication and love for the long-running anime One Piece, my second project, the One Piece Orchard, acts as an online library for One Piece enthusiasts like myself to keep track of all the 'Devil Fruits' that have appeared throughout the series, keep track of the users of that fruit, and learn more about it.</p>
-                    <p>Built with
-                        <i class="fab fa-html5" title="HTML5"></i> HTML, 
-                        <i class="fab fa-css3-alt" title="CSS3"></i> CSS, and 
-                        <i class="fab fa-js" title="JavaScript"></i> JavaScript.
-                        <i class="fab fa-node-js" title="Node.js"></i> Node.js,
-                        <i class="fab fa-express" title="Express.js"></i> Express.js,
-                        <i class="fab fa-vuejs" title="Vue.js"></i> Vue.js, and
-                        <i class="fab fa-envira" title="MongoDB"></i> MongoDB.
+                    <br>
+                    <p>
+                        <i class="fab fa-html5" title="HTML5"></i> HTML
+                        <i class="fab fa-css3-alt" title="CSS3"></i> CSS
+                        <i class="fab fa-js" title="JavaScript"></i> JavaScript
+                        <i class="fab fa-node-js" title="Node.js"></i> Node.js
+                        <i class="fab fa-express" title="Express.js"></i> Express.js
+                        <i class="fab fa-vuejs" title="Vue.js"></i> Vue.js
+                        <i class="fab fa-envira" title="MongoDB"></i> MongoDB
                     </p>
                     <!-- Buttons section -->
                     <div class="flex items-center justify-around mt-4">
@@ -398,29 +431,105 @@
                         </a>
                     </div>
                 </div>
-                <div>
-                    <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
-                        <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
-                            <img src="assets/images/opo.png" class="dark:hidden h-[156px] md:h-[278px] w-full rounded-xl" alt="">
-                            <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen-dark.png" class="hidden dark:block h-[156px] md:h-[278px] w-full rounded-lg" alt="">
+                    <!-- Image carousel -->
+                <div id="controls-carousel" class="relative w-full" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                         <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/images/demo/opo6.png" class="carousel-image absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                            <img src="assets/images/demo/opo1.png" class="carousel-image absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/images/demo/opo2.png" class="carousel-image absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/images/demo/opo3.png" class="carousel-image absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/images/demo/opo4.png" class="carousel-image absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/images/demo/opo5.png" class="carousel-image absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                         </div>
                     </div>
-                    <div class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
-                        <div class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"></div>
-                    </div>
-                </div>
+                    <!-- Slider controls -->
+                    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-pink dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 group focus:outline-none" data-carousel-next>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-pink dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>  
             </div>
 
+
             <!-- Snake Game -->
+
             <div class="flex items-center justify-between">
-                <div class="w-1/2">
+                <!-- Image carousel -->
+                <div id="controls-carousel" class="relative w-full" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/images/demo/snake3.png" class="carousel-image absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                            <img src="assets/images/demo/snake1.png" class="carousel-image absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="assets/images/demo/snake2.png" class="carousel-image absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-pink dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 group focus:outline-none" data-carousel-next>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-pink dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>  
+                <div class="project-text w-1/2">
                     <h2>Snake Game</h2>
                     <h3>Solo Project | 1 Week</h3>
-                    <p>This was the first project I completed. My aim was to recreate the classical game snake with a more modern twist.</p>
-                    <p>Built with
-                        <i class="fab fa-html5" title="HTML5"></i> HTML, 
-                        <i class="fab fa-css3-alt" title="CSS3"></i> CSS, and 
-                        <i class="fab fa-js" title="JavaScript"></i> JavaScript.
+                    <br>
+                    <p>This was the first project I completed as part of my General Assembly bootcamp. 
+                        My aim was to recreate the classical game, snake, with a more modern twist, 
+                        featuring a snake which moves around the game board in search of food whilst avoiding collision with itself and the game board.</p>
+                    <br>
+                    <p>
+                        <i class="fab fa-html5" title="HTML5"></i> HTML
+                        <i class="fab fa-css3-alt" title="CSS3"></i> CSS
+                        <i class="fab fa-js" title="JavaScript"></i> JavaScript
                     </p>
                     <!-- Buttons section -->
                     <div class="flex items-center justify-around mt-4">
@@ -435,18 +544,6 @@
                         </a>
                     </div>
                 </div>
-                <div>
-                    <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
-                        <!-- The One Piece Orchard content -->
-                        <div class="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
-                            <img src="assets/images/snake.png" class="dark:hidden h-[156px] md:h-[278px] w-full rounded-xl" alt="">
-                            <img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen-dark.png" class="hidden dark:block h-[156px] md:h-[278px] w-full rounded-lg" alt="">
-                        </div>
-                    </div>
-                    <div class="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
-                        <div class="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[56px] h-[5px] md:w-[96px] md:h-[8px] bg-gray-800"></div>
-                    </div>
-                </div>
             </div>
 
             <div>
@@ -459,24 +556,40 @@
             <div class="timeline">
                 <div class="ga-event">
                     <div class="ga-content">
-                        <h2>Student | General Assembly Software Engineering Immersive</h2>
-                        <h3>September 2023 - November 2023</h3>
-                        <p>
+                        <h3>Student | General Assembly Software Engineering Immersive</h3>
+                        <br>
+                        <p id="italics">September 2023 - November 2023</p>
+                        <br>
+                        <p id="experience">
                             Completed a 12-week program, exploring the fundamental principles of full-stack web development.
+                            <br>
+                            <br>
                             Engaged collaboratively in a team environment, actively participating in daily standups to enhance communication and teamwork skills.
+                            <br>
+                            <br>
                             Applied Agile methodologies fostering adaptability and efficiency in project development.
+                            <br>
+                            <br>
                             Demonstrated practical understanding through the deployment of four projects.
                         </p>
                     </div>
                 </div>
                 <div class="ba-event">
                     <div class="ba-content">
-                        <h2>Teacher (Psychology/Science) | Brampton Manor Academy</h2>
-                        <h3>July 2022 - July 2023</h3>
-                        <p>
+                        <h3>Teacher (Psychology/Science) | Brampton Manor Academy</h3>
+                        <br>
+                        <p id="italics">July 2022 - July 2023</p>
+                        <br>
+                        <p id="experience">
                             Developed strong communication and presentation skills through teaching Psychology in the KS3-KS5 curriculum.
+                            <br>
+                            <br>
                             Demonstrated organizational and planning abilities by creating engaging lessons that catered to diverse learning needs.
+                            <br>
+                            <br>
                             Illustrated adaptability and problem-solving acumen by identifying and addressing diverse learning needs and adapting teaching methods to enhance student comprehension and engagement.
+                            <br>
+                            <br>
                             Fostered a supportive and collaborative classroom atmosphere, prioritizing student well-being and growth through effective communication, empathy, and responsive teaching strategies.
                         </p>
                     </div>
@@ -501,6 +614,8 @@
                     contributing to the overall well-being of both my body and mind.
                 </p>
                 </div>
+                <i class="fas fa-dumbbell text-5xl"></i>
+
             </div>
 
             <div class="flex items-center justify-between">
