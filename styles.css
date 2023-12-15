@@ -16,25 +16,6 @@ body {
 a, button {
     cursor: none;
 }
-/* Add mobile-specific styles */
-@media (max-width: 767px) {
-    .menu-container {
-        display: none;
-    }
-
-    .menu-container.active {
-        display: flex;
-    }
-    .button-slider {
-        /* Adjust the styles for smaller screens */
-        font-size: 14px; /* Example: reduce font size */
-        padding: 8px;    /* Example: reduce padding */
-    }
-    p {
-        font-size: 14px; /* Decrease font size for smaller screens */
-        margin-bottom: 16px; /* Decrease bottom margin for smaller screens */
-    }
-  }
 
 .intro {
     height: 100%;
@@ -245,6 +226,7 @@ p {
 #controls-carousel {
     max-width: 600px; /* Set the maximum width of the carousel container */
     margin: 0 auto; /* Center the carousel container on the page */
+    z-index: 1; /* Set a lower z-index for the carousel */
 }
 
 /* Add a CSS style for the carousel wrapper */
@@ -254,9 +236,6 @@ p {
     border-radius: 10px; /* Optionally add border-radius for rounded corners */
 }
 
-#controls-carousel {
-    z-index: 1; /* Set a lower z-index for the carousel */
-}
 
 #navbar {
     z-index: 2; /* Set a higher z-index for the navbar */
@@ -290,3 +269,52 @@ p {
 .fitness {
     padding: 200px;
 }
+
+/* Add mobile-specific styles */
+@media (max-width: 767px) {
+    .menu-container {
+        display: none;
+    }
+
+    .menu-container.active {
+        display: flex;
+    }
+    .button-slider {
+        /* Adjust the styles for smaller screens */
+        font-size: 14px; /* Example: reduce font size */
+        padding: 8px;    /* Example: reduce padding */
+    }
+    p {
+        font-size: 20px; /* Decrease font size for smaller screens */
+        margin-bottom: 16px; /* Decrease bottom margin for smaller screens */
+    }
+    .about-content {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .about-text {
+        max-width: 100%; /* Full width for text on smaller screens */
+        margin-bottom: 20px; /* Add margin between text and image on smaller screens */
+    }
+
+    .about-image {
+        max-width: 100%; /* Full width for image on smaller screens */
+    }
+    .skills-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Auto-fit with a minimum width of 120px */
+    }
+    .project-content {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items horizontally on smaller screens */
+    }
+
+    .project-text {
+        width: 100%; /* Full width for text on smaller screens */
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .relative {
+        width: 100%; /* Full width for the image carousel on smaller screens */
+    }
+  }
