@@ -25,20 +25,20 @@ document.addEventListener("DOMContentLoaded", function() {
             navbar.style.display = 'block';
         }
     }
-        const carousel = document.getElementById('controls-carousel');
+        // const carousel = document.getElementById('controls-carousel');
 
-        // Set a higher z-index for the navbar
-        navbar.style.zIndex = '2';
+        // // Set a higher z-index for the navbar
+        // navbar.style.zIndex = '2';
 
-        // Set a lower z-index for the carousel
-        carousel.style.zIndex = '1';
+        // // Set a lower z-index for the carousel
+        // carousel.style.zIndex = '1';
 
-    var toggleButton = document.getElementById("toggleButton");
-    var menuContainer = document.querySelector(".menu-container");
+    // var toggleButton = document.getElementById("toggleButton");
+    // var menuContainer = document.querySelector(".menu-container");
 
-    toggleButton.addEventListener("click", function() {
-        menuContainer.classList.toggle("active");
-    });
+    // toggleButton.addEventListener("click", function() {
+    //     menuContainer.classList.toggle("active");
+    // });
 
 
     const backToTopButton = document.getElementById("back-to-top");
