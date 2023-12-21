@@ -105,3 +105,31 @@
                 </div>  
             </div>
 
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="contact-text">Feel free to reach out to me on</h2>
+    
+    <div class="contacts-container">
+        <!-- GitHub Icon and Link -->
+        <a href="https://github.com/AishaA14" target="_blank" rel="noopener noreferrer" class="text-center">
+            <i class="fab fa-github"></i>
+            <p>GitHub</p>
+        </a>
+    
+        <!-- LinkedIn Icon and Link -->
+        <a href="https://www.linkedin.com/in/aisha-ayinde14/" target="_blank" rel="noopener noreferrer" class="text-center">
+            <i class="fab fa-linkedin"></i>
+            <p>LinkedIn</p>
+        </a>
+    
+        <!-- Email Icon and Link -->
+        <a href="mailto:aayinde723@gmail.com" class="text-center">
+            <i class="fas fa-envelope"></i>
+            <p>Email</p>
+        </a>
+    </div>   
+</section>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Raleway:wght@100;400&family=Rubik+Broken+Fax&family=Rubik+Doodle+Shadow&family=Rubik+Doodle+Triangles&family=Rubik+Lines&family=Rubik+Scribble&display=swap" rel="stylesheet">

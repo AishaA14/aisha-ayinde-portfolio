@@ -1,5 +1,6 @@
 body {
-    font-family: 'Comfortaa', sans-serif;
+    /* font-family: 'Comfortaa', sans-serif; */
+    font-family: 'Rubik Doodle Shadow';
     cursor: none; /* Hide the default cursor */
 }
 
@@ -34,6 +35,12 @@ a, button {
     
 }
 
+h1 {
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
 h2{
     text-align: center;
     font-size: 50px;
@@ -187,16 +194,20 @@ h2, h3, p {
 
 h2 {
     animation: slideInFromTop 1s ease-out;
+    color: lightseagreen;
 }
 
 h3 {
     animation: slideInFromTop 1s ease-out;
     animation-delay: 0.2s; /* Add delay for subheaders */
+    color: lightcoral;
 }
 
 p {
     animation: fadeInFromSide 1.5s ease-out;
     animation-delay: 0.4s; /* Add delay for paragraphs */
+    font-family: 'Kanit';
+    font-size: 20px;
 }
 
 
@@ -240,6 +251,8 @@ p {
 
 #navbar {
     z-index: 2; /* Set a higher z-index for the navbar */
+    background-color: #E8D6C3;
+
 }
 
 .pink-text {
@@ -254,10 +267,6 @@ p {
 }
 .single-project {
     margin: 50px;
-}
-
-#contact {
-    padding: 200px;
 }
 
 #italics {
@@ -289,6 +298,7 @@ p {
         font-size: 20px; /* Decrease font size for smaller screens */
         margin-bottom: 16px; /* Decrease bottom margin for smaller screens */
     }
+    
     .about-content {
         flex-direction: column; /* Stack items vertically on smaller screens */
         text-align: center; /* Center text on smaller screens */
@@ -318,4 +328,16 @@ p {
     .relative {
         width: 100%; /* Full width for the image carousel on smaller screens */
     }
+  }
+
+  .animated-element {
+    background-color: aquamarine;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    left: -400px;
   }

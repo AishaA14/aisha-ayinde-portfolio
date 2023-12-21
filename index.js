@@ -100,6 +100,40 @@ document.addEventListener("DOMContentLoaded", function() {
             document.querySelector('.cursor').remove();
         });
     });
+// gsap animation
+let tl = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.animated-element',
+        start: '35% 80%',
+        // where to start the animation in relation to the element 
+        // i.e. start at the top of the animated element, or 35% from the top
+        // start at the center of the viewport
+        end: 'bottom 80%',
+        // end at end of view port of around 80% of the view port
+        // position of start and end can determine how long it takes
+        scrub: true,
+        markers: false
+    }
+})
+
+tl.to('.animated-element',{
+    x: 800
+    // 800 pixels
+} )
+        // smooth scroll
+    const lenis = new Lenis()
+
+    lenis.on('scroll', (e) => {
+    console.log(e)
+    })
+
+    function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
 
   });
 
+  
