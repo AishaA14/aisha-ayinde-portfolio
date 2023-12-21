@@ -133,3 +133,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Raleway:wght@100;400&family=Rubik+Broken+Fax&family=Rubik+Doodle+Shadow&family=Rubik+Doodle+Triangles&family=Rubik+Lines&family=Rubik+Scribble&display=swap" rel="stylesheet">
+<style>
+    h1 {
+background-color: #E8D6C3;
+    }
+</style>

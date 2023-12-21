@@ -28,6 +28,8 @@ a, button {
     font-size: 80px;
     padding-top: 150px;
     padding-bottom: 400px;
+    background-image: url('assets/images/bg-images/white-grain.jpg');
+
 }
 
 .intro h2 {
@@ -251,7 +253,10 @@ p {
 
 #navbar {
     z-index: 2; /* Set a higher z-index for the navbar */
-    background-color: #E8D6C3;
+    
+}
+.nav {
+    background-color: pink;
 
 }
 
